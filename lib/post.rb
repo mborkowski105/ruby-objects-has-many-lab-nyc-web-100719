@@ -1,26 +1,25 @@
 class Post
-  attr_reader :name, :artist
+  attr_reader :title, :author
   
   @@all = []
   
   def initialize(title)
     @title = title
+    @author = nil
     @@all << self
   end
   
   def self.all 
     return @@all
   end
-  
+
   def author=(author)
-    @author = author 
+    @author = author
   end
   
   def author_name
     if (self.author)
-      return self.author.name
-    else
-      return nil 
-    end
+      return self.author.title
+    end 
   end
 end
