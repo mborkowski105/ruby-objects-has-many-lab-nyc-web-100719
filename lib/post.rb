@@ -26,4 +26,10 @@ class Post
       return self.author.name
     end 
   end
+  
+  def songs 
+    Posts.all.select do |post|
+      post.author
+    end
+  end
 end
