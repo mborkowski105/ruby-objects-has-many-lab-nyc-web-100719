@@ -17,6 +17,10 @@ class Post
     @author = author
   end
   
+  def add_post(post)
+    post.author = self
+  end
+  
   def author_name
     if (self.author)
       return self.author.name
