@@ -27,7 +27,7 @@ class Post
     end 
   end
   
-  def songs 
+  def posts 
     Posts.all.select do |post|
       post.author
     end
