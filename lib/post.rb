@@ -28,7 +28,7 @@ class Post
   end
   
   def posts 
-    Posts.all.select do |post|
+    Post.all.select do |post|
       post.author
     end
   end
