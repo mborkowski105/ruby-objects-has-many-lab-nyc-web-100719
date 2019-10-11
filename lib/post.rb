@@ -26,10 +26,4 @@ class Post
       return self.author.name
     end 
   end
-  
-  def posts 
-    Post.all.select do |post|
-      post.author
-    end
-  end
 end
